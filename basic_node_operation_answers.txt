@@ -1,0 +1,123 @@
+Question 1: Run the commands sort, wc and uniq on the commands.js file. Explain how they work and what the output was.
+
+A.
+
+a) sort: this standard command will output in an ascending sorted fashion line by line of the commands.js file. Something that I noticed
+is that it takes into account tab spaces, so the more leading tab spaces a line has, it will be classified in the first places of the sorted 
+list.
+
+This is the output after typing: sort commands.js: It is clear that the first 6 lines have 3 leading tab spaces, soy the come at first
+in the sorting process. The the ones that have 2 leading tabs and so on until sorting the ones with no leading tab spaces.
+
+         break;
+         break;
+         commandLibrary.cat(userInputArray.slice(1));
+         commandLibrary.echo(userInputArray.slice(1).join(" "));
+         done(data);
+         if (err) throw err;
+      });
+      case "cat":
+      case "echo":
+      const fileName = fullPath[0];
+      done(userInput);
+      fs.readFile(fileName, (err, data) => {
+   "cat": function (fullPath) {
+   "echo": function (userInput) {
+   // Parses the user input to understand which command was typed
+   // The cat command
+   // The echo command
+   }
+   }
+   },
+   const command = userInputArray[0];
+   const userInputArray = userInput.split(" ");
+   process.stdout.write('\nprompt > ');
+   process.stdout.write(output);
+   switch (command) {
+
+
+
+
+
+
+
+
+
+
+
+
+// Where we will store our commands
+// Where we will store the logic of our commands
+// Write out data
+}
+}
+};
+const commandLibrary = {
+const fs = require('fs');
+function done(output) {
+function evaluateCmd(userInput) {
+module.exports.commandLibrary = commandLibrary;
+module.exports.evaluateCmd = evaluateCmd;
+
+
+*****
+
+Question 2:
+
+A. Using the pipe (|) connect at least two commands and run it on commands.js. Explain what the output was and why the specific 
+data was outputted.
+
+The "piped" command was: head commands.js | wc
+Output: 10      26     225
+
+Explanation:
+1. First the command head provides the first 10 lines of the commands.js file,
+2. then the wc counts the total number of lines (10), total number of words (26), and the bytes count (225) found in the data. 
+
+*****
+
+Question 6:
+
+A.
+
+Code:
+
+var input = "I'm learning to program algorithms!";
+
+// First, split the input string
+var reverseString = str => {
+   var splittedString = str.split(" ");
+
+   reverseWords(splittedString);
+};
+
+
+// Second, reverse words and push each reversed word in a new array
+var reverseWords = wordArray => {
+   var arrayWithReversedWords = [];
+
+   for (let i = 0; i < wordArray.length; i++) {
+      var str = [...wordArray[i]];
+      var reversed = str.reverse();
+      var joined = reversed.join('');
+
+      arrayWithReversedWords.push(joined);
+   }
+
+   joinWords(arrayWithReversedWords);
+};
+
+
+// Third, join words inside the array to form the output sentence with reversed words and console.log it
+var joinWords = wordArray => {
+   var output = wordArray.join(' ');
+
+   console.log(output);
+}
+
+
+reverseString(input);
+
+*****
+
+Submitted by Cesar Jimenez
